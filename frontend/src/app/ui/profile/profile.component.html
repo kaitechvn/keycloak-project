@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="center-form">
+      <div class="form-group">
+        <label for="accessToken">Access Token:</label>
+        <textarea id="accessToken" class="form-control" rows="4" [(ngModel)]="accessToken" readonly></textarea>
+      </div>
+      <div class="form-group">
+        <label for="expiresIn">Expires In (seconds):</label>
+        <input type="text" id="expiresIn" class="form-control" [(ngModel)]="expiresIn" readonly>
+      </div>
+      <div class="form-group">
+        <label for="refreshToken">Refresh Token:</label>
+        <textarea id="refreshToken" class="form-control" rows="4" [(ngModel)]="refreshToken" readonly></textarea>
+      </div>
+      <div class="form-group">
+        <label for="refreshTokenExpiresIn">Refresh Token Expires In (seconds):</label>
+        <input type="text" id="refreshTokenExpiresIn" class="form-control" [(ngModel)]="refreshTokenExpiresIn" readonly>
+      </div>
+      <div class="form-group">
+        <label for="tokenType">Token Type:</label>
+        <input type="text" id="tokenType" class="form-control" [(ngModel)]="tokenType" readonly>
+      </div>
+      <div class="form-group">
+        <label for="idToken">ID Token:</label>
+        <textarea id="idToken" class="form-control" rows="4" [(ngModel)]="idToken" readonly></textarea>
+      </div>
+        
+      <button class="btn btn-primary refresh-button" (click)="handleProfile()">Refresh</button>
+      
+      <div class="form-group">
+        <button class="btn btn-primary" (click)="getAuthorizationCode()">Get Authorization Code</button>
+      </div>
+      
+      
+        <div class="form-group">
+          <label for="authorizationCode">Authorization Code:</label>
+          <textarea id="authorizationCode" class="form-control" rows="4" [(ngModel)]="authorizationCode" readonly></textarea>
+        </div>
+      
+      
+    </div>
+  </div>
+  

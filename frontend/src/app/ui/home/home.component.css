@@ -1,0 +1,13 @@
+.vh-100 {
+  height: 100vh;
+}
+
+.left-corner-image {
+  max-width: 100%; /* Adjust image size as needed */
+  /* The images will be stacked vertically by default */
+}
+
+/* Optional: Add custom spacing between images */
+.left-corner-image + .left-corner-image {
+  margin-top: 10px; /* Adjust as needed */
+}
